@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Estadísticas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="{%static 'assets/stats/statsFunc.js' %}"></script>
+        <link href="{%static 'assets/stats/styleStats.css' %}" rel="stylesheet">
+    </head>
+    <body onload="generarDatos()">
+        <div class="top">
+            <span class="menuSvg"><img src="{%static 'assets/stats/menuIcon.svg' %}"></span>
+            <div class="buscador">
+                <span class="lupaSvg"><img src="{%static 'assets/stats/lupa.svg' %}"></span>
+                <input type="text" placeholder="Buscar..." class="buscadorInput">
+                <span class="tuneSvg"><img src="{%static 'assets/stats/tune.svg' %}"></span>
+            </div>
+            <button class="notifBtn"><img src="{%static 'assets/stats/notif.svg' %}"></button>
+            <button class="opcsBtn"><img src="{%static 'assets/stats/opcs.svg' %}"></button>
+            <span class="userBtn"><img src="{%static 'assets/stats/emp1.png' %}"></span>
+            <span class="downArrowBtn"><img src="{%static 'assets/stats/downArrow.svg' %}"></span>
+        </div>
+        <div class="side">
+            <div class="tab1">
+                <table>
+                    <tr><span class="sideItem"><img src="{%static 'assets/stats/home.svg' %}">Inicio</span></tr>
+                    <tr><span class="sideItem"><img src="{%static 'assets/stats/speed.svg' %}">DashBoard</span></tr>
+                    <tr><span class="sideItem"><img src="{%static 'assets/stats/calendar.svg' %}">Reservas</span></tr>
+                    <tr><span class="sideItem"><img src="{%static 'assets/stats/products.svg' %}">Servicios</span></tr>
+                    <tr><span class="sideItem"><img src="{%static 'assets/stats/people.svg' %}">Clientes</span></tr>
+                </table>
+            </div>
+            <rect class="linea"></rect>
+            <div class="tab2">
+                <label class="adminTxt">ADMIN</label>
+                <table>
+                    <tr><span class="sideItem"><img src="{%static 'assets/stats/bar.svg' %}">Estadísticas</span></tr>
+                    <tr><span class="sideItem"><img src="{%static 'assets/stats/opcs.svg' %}">Ajustes</span></tr>
+                </table>
+            </div>
+            <span class="sideItem logout"><img src="{%static 'assets/stats/logout.svg' %}">Cerrar sesion</span>
+        </div>
+        <label class="tituloStats">Estadísticas</label>
+        <div>
+            <div class="ganacias">
+                <label class="ganaciasTxt">Ganacias</label>
+                <label class="numeroGanancias">$1</label>
+                <label class="anualTxtG">Anual</label>
+                <div class="graficaGanacias"><canvas id="graficaGanacias"></canvas></div>
+            </div>
+            <div class="costos">
+                <label class="costosTxt">Costos</label>
+                <label class="numeroCostos">$-10</label>
+                <label class="anualTxtC">Anual</label>
+                <div class="graficaCostos"><canvas id="graficaCostos"></canvas></div>
+            </div>
+            <div class="ocupacion">
+                <label class="ocupacion1Txt">&#191Como van las ocupaciones?</label>
+                <label class="ocupacion2Txt">Numero de clientes en tus hoteles</label>
+                <select id="tiempoOcupacion">
+                    <option value="semana">Ultimos 7 días</option>
+                    <option value="mes">Ultimo mes</option>
+                    <option value="anio">Ultimo año</option>
+                    <option value="all">Desde el inicio</option>
+                </select>
+                <div class="graficaOcupacion"><canvas id="graficaOcupacion"></canvas></div>
+            </div>
+            <div class="solicitudes">
+                <label class="ocupacion1Txt">Solicitudes de Servicios</label>
+                <label class="ocupacion2Txt">Numero de reservas de espacios aprobadas</label>
+                <select id="hotelesSel">
+                    <option value="1">H1</option>
+                    <option value="2">H2</option>
+                </select>
+                <select id="tiempoOcupacion">
+                    <option value="semana">Ultimos 7 días</option>
+                    <option value="mes">Ultimo mes</option>
+                    <option value="anio">Ultimo año</option>
+                    <option value="all">Desde el inicio</option>
+                </select>
+                <div class="graficaOcupacion"><canvas id="graficaSolicitudes"></canvas></div>
+            </div>
+            <div class="numeros">
+                <label class="numerosTitulo">Numeros</label>
+                <select id="tiempoOcupacionN">
+                    <option value="semana">Ultimos 7 días</option>
+                    <option value="mes">Ultimo mes</option>
+                    <option value="anio">Ultimo año</option>
+                </select>
+                <div class="tab3">
+                    <table>
+                        <tr>
+                            <td><div class="rectangulo"><label class="rectTxt">10</label></div></td>
+                            <td><label class="datoTxt">Nuevos huespedes</label></tr></td>
+                        <tr>
+                            <td><div class="rectangulo"><label class="rectTxt">7</label></div></td>
+                            <td><label class="datoTxt">Nuevas reservaciones</label></tr></td>
+                        <tr>
+                            <td><div class="rectangulo"><label class="rectTxt">2</label></div></td>
+                            <td><label class="datoTxt">Cancelaciones</label></tr></td>
+                        <tr>
+                            <td><div class="rectangulo"><label class="rectTxt">4</label></div></td>
+                            <td><label class="datoTxt">Nuevos Comentarios</label></tr></td>
+                        <tr>
+                            <td><div class="rectangulo"><label class="rectTxt">10</label></div></td>
+                            <td><label class="datoTxt">Notificaciones</label></tr></td>
+                    </table>
+                </div>
+            </div>
+            <div class="personal">
+                <label class="tituloPersonal">Personal Disponible</label>
+                <div class="tab4">
+                    <table cellspacing="10">
+                        <tr>
+                            <td rowspan="2"><img src="{%static 'assets/stats/emp1.png' %}" class="empFoto"></td>
+                            <td><label class="nombreEmp">E1</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="estadoEmp">Disponible</label></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><img src="{%static 'assets/stats/emp1.png' %}" class="empFoto"></td>
+                            <td><label class="nombreEmp">E2</label></td> 
+                        </tr>
+                        <tr>
+                            <td><label class="estadoEmp">Disponible</label></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><img src="{%static 'assets/stats/emp1.png' %}" class="empFoto"></td>
+                            <td><label class="nombreEmp">E3</label></td>  
+                        </tr>
+                        <tr>
+                            <td><label class="estadoEmp">Disponible</label></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><img src="{%static 'assets/stats/emp1.png' %}" class="empFoto"></td>
+                            <td><label class="nombreEmp">E4</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="estadoEmp">Disponible</label></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><img src="{%static 'assets/stats/emp1.png' %}" class="empFoto"></td>
+                            <td><label class="nombreEmp">E5</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="estadoEmp">Disponible</label></td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="masEmp">Mostrar más</button>
+            </div>
+            <div class="compartir">
+                <label class="compartirTitulo">Compartir</label>
+                <label class="compartirInfo">Comparte la informacion de tu hotel en el formato que desees</label>
+                <img class="xlsxSvg" src="{%static 'assets/stats/xls.svg' %}">
+                <img class="pdfSvg" src="{%static 'assets/stats/pdf.svg' %}">
+                <img class="docxSvg" src="{%static 'assets/stats/doc.svg' %}">
+            </div>
+        </div>
+    </body>
+</html>

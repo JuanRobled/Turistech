@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Turistech-Registrarse</title>
+        <link href="{% static 'assets/signUp/css/styleSignUp.css' %}" rel='stylesheet'>
+    </head>
+    <body>
+        <img src="{% static 'assets/signUp/img/logo.svg' %}">
+        <label class="Nombre">Turistech</label>
+        <main>
+            <div class="formulario">
+                <h2>Empieza a gestionar tus servicios:</h2>
+                <form>
+                    <div class="name">
+                        <label class="nameLabel">Nombre:</label>
+                        <br>
+                        <input type="text" placeholder="Primer nombre" class="nameInput">
+                    </div>
+                    <div class="lastName">
+                        <label class="lastNameLabel">Apellido:</label>
+                        <input type="text" placeholder="Primer apellido" class="lastNameInput">
+                    </div>
+                    <div class="email">
+                        <label class="emailLabel">Correo:</label>
+                        <input type="text" placeholder="ejemplo@gmail.com" class="emailInput">
+                    </div>
+                    <div class="passwd">
+                        <label class="passwdLabel">Contrase&ntildea:</label>
+                        <input type="text" placeholder="Ingresa al menos 8 caractéres" class="passwdInput">
+                        <span class="passwdSvg"><img src= "{% static 'assets/signUp/img/material-visibility.svg' %}"></span>
+                    </div>
+                    <br>
+                    <input type="checkbox" class="check">
+                    <label class="checkLabel">Al registrarme, acepto las <a href="SIGNUP">Condiciones de uso y la Políticas de privacidad</a></label>
+                    <br>
+                    <a href="{% url 'homePage' %}" class="sendRegistro">Registrarse</a>
+
+                </form>
+                <h6>O registrate con:</h6>
+                <button type="submit" class="bG">Google</button>
+                <button type="submit" class="bF">Facebook</button>
+                <button type="submit" class="bA">Apple</button>
+                <label class="iniciarSesion">&#191Ya tienes cuenta? <a href="SIGIN">Inicia Sesion</a></label>
+            </div>
+        </main>
+        <img src="{% static 'assets/signUp/img/svgTitulo.svg' %}">
+        <label class="titulo">Únetenos y podrás...</label>
+        <img src="{% static 'assets/signUp/img/svg1.svg' %}">
+        <label class="ven1">Optimizar la gestión de tu alojamiento. ¡Lleva tu negocio al siguiente nivel!</label>
+        <img src="{% static 'assets/signUp/img/svg2.svg' %}">
+        <label class="ven2">Descubrir una nueva forma más simple de gestionar tus reservas y alojamientos.</label>
+        <img src="{% static 'assets/signUp/img/svg3.svg' %}">
+        <label class="ven3">Hacer más eficiente la gestión de huéspedes. Libera tiempo para lo que realmente importa en tu negocio</label>
+    </body>
+</html>

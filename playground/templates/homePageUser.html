@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePageUser</title>
+    <link rel="stylesheet" href="{%static 'assets/HomeUser/homePageUser.css'%}">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-left">
+            <div class="logo">Tu Logo</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown">
+                <button class="dropbtn">Menú</button>
+                <div class="dropdown-content">
+                    <a href="#">Opción 1</a>
+                    <a href="#">Opción 2</a>
+                    <a href="#">Opción 3</a>
+                </div>
+            </div>
+            <div class="notification-icon">
+                <a href="#"><img src="{%static 'assets/HomeUser/iconos/notificacion.png' %}" alt="Notificaciones"></a>
+            </div>
+            <div class="config-icon">
+                <a href="#"><img src="{%static 'assets/HomeUser/iconos/configuraciones.png' %}" alt="Configuración"></a>
+            </div>
+            <div class="user-icon">
+                <a href="#"><img src="{%static 'assets/HomeUser/iconos/usuario-de-perfil.png' %}" alt="Usuario"></a>
+            </div>
+        </div>
+    </header>
+
+    <hr class="hr-header">
+
+    <!-- CONTENIDO DE LA PÁGINA -->
+
+    <div class="container">
+        <section class="my-services">
+            <h2>Servicios Contratados</h2>
+            <div class="card-wrapper">
+                <div class="card">
+                    <a href="#" class="iconos-tarjetas"><img src="{%static 'assets/HomeUser/iconos/desayuno.png' %}" alt="icons-tarjetas"></a>
+                    <h3>Desayuno buffet</h3>
+                    <p>Alimentacion</p>
+                </div>
+                <div class="card">
+                    <a href="#" class="iconos-tarjetas"><img src="{%static 'assets/HomeUser/iconos/desayuno.png' %}" alt="icons-tarjetas"></a>
+                    <h3>Room service</h3>
+                    <p>Alimentacion</p>
+                </div>
+                <div class="card">
+                    <a href="#" class="iconos-tarjetas"><img src="{%static 'assets/HomeUser/iconos/latido-del-corazon.png' %}" alt="icons-tarjetas"></a>
+                    <h3>Spa</h3>
+                    <p>Bienestar</p>
+                </div>
+                <div class="card">
+                    <a href="#" class="iconos-tarjetas"><img src="{%static 'assets/HomeUser/iconos/teatro.png' %}" alt=""></a>
+                    <h3>Excursiones guiadas</h3>
+                    <p>Entretenimiento y ocio</p>
+                </div>
+                <div class="card">
+                    <a href="#" class="iconos-tarjetas"><img src="{%static 'assets/HomeUser/iconos/calendario.png' %}" alt=""></a>
+                    <h3>Equipos audiovisuales</h3>
+                    <p>Eventos</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-habitaciones">
+            <h2>Mis habitaciones</h2>
+            <div class="location-preview">
+                <div class="location">
+                    <img src="{%static 'assets/HomeUser/img/hab234.jpg' %}" alt="Hotel 1">
+                    <h3>Habitación 234</h3>
+                    <a href="#">Ver más</a>
+                </div>
+                <div class="location">
+                    <img src="{%static 'assets/HomeUser/img/hab235.jpg' %}" alt="Hotel 2">
+                    <h3>Hbitación 235</h3>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <hr> <!-- División horizontal -->
+
+    <section class="services">
+        <h2>Servicios</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre del Servicio</th>
+                        <th>Tipo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Servicios de alojamiento -->
+                    <tr>
+                        <td>Cunas para bebés</td>
+                        <td>Alojamiento</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Servicio de habitación 24/7</td>
+                        <td>Alojamiento</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Late check-out (salida tardía)</td>
+                        <td>Alojamiento</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <!-- Servicios de restauración -->
+                    <tr>
+                        <td>Desayuno buffet</td>
+                        <td>Alimentacion</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Servicio de catering para eventos</td>
+                        <td>Alimentacion</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Room service</td>
+                        <td>Alimentacion</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <!-- Servicios de bienestar y relajación -->
+                    <tr>
+                        <td>Spa</td>
+                        <td>Bienestar</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Masajes en la habitación</td>
+                        <td>Bienestar</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Clases de yoga o pilates</td>
+                        <td>Bienestar</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Acceso al gimnasio</td>
+                        <td>Bienestar</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jacuzzi</td>
+                        <td>Bienestar</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <!-- Servicios de entretenimiento y ocio -->
+                    <tr>
+                        <td>Excursiones guiadas</td>
+                        <td>Entretenimiento y ocio</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Alquiler de bicicletas</td>
+                        <td>Entretenimiento y ocio</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Programa de actividades para niños</td>
+                        <td>Entretenimiento y ocio</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Noches temáticas</td>
+                        <td>Entretenimiento y ocio</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Espectáculos en vivo</td>
+                        <td>Entretenimiento y ocio</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Acceso a las áreas recreativas</td>
+                        <td>Entretenimiento y ocio</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <!-- Servicios de negocios y eventos -->
+                    <tr>
+                        <td>Equipos audiovisuales</td>
+                        <td>Eventos</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <!-- Servicios de transporte -->
+                    <tr>
+                        <td>Traslado desde/hacia el aeropuerto</td>
+                        <td>Transporte</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <!-- Servicios de atención al cliente -->
+                    <tr>
+                        <td>Servicio de lavandería y tintorería</td>
+                        <td>Atención al cliente</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Guardería para mascotas</td>
+                        <td>Atención al cliente</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Asistencia médica de emergencia</td>
+                        <td>Atención al cliente</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Servicio de asesoramiento turístico</td>
+                        <td>Atención al cliente</td>
+                        <td><button>Contratar</button></td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

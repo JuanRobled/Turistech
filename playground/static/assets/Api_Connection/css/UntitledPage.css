@@ -1,0 +1,242 @@
+.untitled-page.main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 3px 6px 0px rgba(18, 15, 40, 0.117);
+  overflow: hidden;
+}
+.untitled-page .section1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 234px;
+}
+.untitled-page .flex_col {
+  position: absolute;
+  top: 34px;
+  left: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px 0px;
+  width: 251px;
+  height: 244px;
+}
+.untitled-page .flex_col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px 0px;
+  width: 100%;
+}
+.untitled-page .flex_row {
+  display: flex;
+  gap: 0px 6px;
+  width: 97.61%;
+}
+.untitled-page .image {
+  margin: 6px 0px 5px;
+  width: 5px;
+  min-width: 0px;
+  height: 9px;
+}
+.untitled-page .info {
+  min-width: 0px;
+  font: 400 12px/1.66 "Manrope", Helvetica, Arial, serif;
+  color: #565e6c;
+}
+.untitled-page .title {
+  font: 500 32px/1.5 "Red Hat Display", Helvetica, Arial, serif;
+  color: #171a1f;
+}
+.untitled-page .content_box2 {
+  display: flex;
+  flex-direction: column;
+  width: 94.02%;
+  background-color: white;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.066);
+}
+.untitled-page .flex_col2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px 0px;
+  margin: 21px 0px 24px 20px;
+  width: 72.88%;
+}
+.untitled-page .flex_row1 {
+  display: flex;
+  align-items: center;
+  gap: 0px 7px;
+  width: 100%;
+}
+.untitled-page .content_box {
+  display: flex;
+  flex-direction: column;
+  width: 36px;
+  min-width: 0px;
+  background-color: #f3f4f6;
+  border-radius: 16px 16px 16px 16px;
+}
+.untitled-page .image1 {
+  margin: 10px 12px;
+  width: 12px;
+  height: 12px;
+}
+.untitled-page .text {
+  min-width: 0px;
+  font: 400 14px/1.57 "Manrope", Helvetica, Arial, serif;
+  color: #9095a0;
+}
+.untitled-page .content_box1 {
+  display: flex;
+  flex-direction: column;
+  width: 36px;
+  min-width: 0px;
+  background-color: #f1f5fe;
+  border-radius: 16px 16px 16px 16px;
+}
+.untitled-page .text1 {
+  min-width: 0px;
+  font: 400 14px/1.57 "Manrope", Helvetica, Arial, serif;
+  color: #5c88f6;
+}
+.untitled-page .flex_row2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 10px;
+  margin: 320px 10.76% 194px auto;
+  width: 897px;
+}
+.untitled-page .content_box11 {
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+  min-width: 0px;
+  background-color: #f0f4fe;
+  border-radius: 15px 15px 15px 15px;
+}
+.untitled-page .flex_col3 {
+  display: flex;
+  flex-direction: column;
+  gap: 161px 0px;
+  margin: 17px 23px 37px 22px;
+}
+.untitled-page .flex_col4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px 0px;
+}
+.untitled-page .flex_col5 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px 0px;
+  width: 100%;
+}
+.untitled-page .flex_row3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 10px;
+  margin: 0px 0px 0px 16px;
+  width: 213px;
+}
+.untitled-page .image2 {
+  width: 73px;
+  min-width: 0px;
+  height: 73px;
+  border-radius: 36.5px 36.5px 36.5px 36.5px;
+}
+.untitled-page .title1 {
+  min-width: 0px;
+  font: 700 32px/1.5 "Red Hat Display", Helvetica, Arial, serif;
+  color: #171a1f;
+}
+.untitled-page .rect4 {
+  min-height: 5px;
+  background-color: #dee1e6;
+  border-radius: 2.5px 2.5px 2.5px 2.5px;
+}
+.untitled-page .subtitle {
+  width: 95.82%;
+  font: 400 20px/1.5 "Manrope", Helvetica, Arial, serif;
+  color: #171a1f;
+}
+.untitled-page .content_box3 {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 8px;
+  width: 126px;
+  background-color: #2d66f5;
+  border-radius: 20.5px 20.5px 20.5px 20.5px;
+}
+.untitled-page .text2 {
+  margin: 10px 35px 9px 34px;
+  font: 400 14px/1.57 "Manrope", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .content_box31 {
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+  min-width: 0px;
+  background-color: #f0f4fe;
+  border-radius: 15px 15px 15px 15px;
+}
+.untitled-page .flex_col6 {
+  display: flex;
+  flex-direction: column;
+  gap: 161px 0px;
+  margin: 12px 22px 37px 23px;
+}
+.untitled-page .flex_col7 {
+  display: flex;
+  flex-direction: column;
+  gap: 13px 0px;
+  width: 100%;
+}
+.untitled-page .flex_row4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 10px;
+  margin: 0px 0px 0px 12px;
+  width: 245px;
+}
+.untitled-page .image3 {
+  width: 85px;
+  min-width: 0px;
+  height: 82px;
+  border-radius: 41px 41px 41px 41px;
+}
+.untitled-page .content_box4 {
+  display: flex;
+  flex-direction: column;
+  width: 126px;
+  background-color: #2d66f5;
+  border-radius: 20.5px 20.5px 20.5px 20.5px;
+}
+.untitled-page .flex_col8 {
+  position: absolute;
+  top: 174px;
+  left: 388px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px 0px;
+  width: 529px;
+  height: 84px;
+}
+.untitled-page .hero_title {
+  width: 100%;
+  font: 700 40px/1.4 "Red Hat Display", Helvetica, Arial, serif;
+  color: #171a1f;
+}
+.untitled-page .highlight {
+  font: 400 18px/1.55 "Manrope", Helvetica, Arial, serif;
+  color: #9095a0;
+}

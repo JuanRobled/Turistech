@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'assets/css/Banner-Heading-Image.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Navbar-Centered-Brand-Dark.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+</head>
+
+<body style="margin: 0px;">
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2"><a class="navbar-brand d-flex align-items-center mx-auto" href="#"></a><a href="#" style="margin-left: 20px;color: rgb(0,0,0);font-family: manrope;">Contact</a><a href="#" style="padding: 0px;margin-left: 20px;margin-top: 0px;margin-right: 20px;color: rgb(0,0,0);font-family: manrope;">Plans</a><a href="#" style="margin-left: 0px;margin-right: 0px;color: rgb(0,0,0);font-family: manrope;">Community</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="{%url 'signIn' %}" style="color: #2D66F5;">Login</a></li>
+                    <a class="btn btn-primary ms-md-2" role="button" href="{%url 'signUp' %}" style="--bs-primary: #0B47E1;--bs-primary-rgb: 11,71,225;background: #2D66F5;">Sign Up&nbsp;→<br></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="bg-dark border rounded border-0 border-dark overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-6" style="border-style: none;background: #ffffff;">
+                        <div class="text-white p-4 p-md-5">
+                            <h1 style="font-family: 'Red Hat Display', sans-serif;font-weight: bold;color: rgb(0,0,0);width: 336px;">Upgrade your hotel management with us.</h1>
+                            <p class="mb-4" style="font-family: Manrope, sans-serif;color: #323842;width: 344px;">Our app streamlines hotel management, connecting owners with guests and simplifying operations, from room allocation to service bookings.</p>
+                            <div class="text-start my-3"><input type="text" style="background: #f0f5ff;border-style: none;height: 0px;margin: 0px;padding: 23px 2px;margin-top: 0px;font-family: Manrope, sans-serif;width: 197px;" placeholder="Email Address"><a class="btn btn-primary btn-lg me-2" role="button" href="#" style="margin-bottom: 3px;background: #285EE8;"><strong>Get Started</strong></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="{%static 'assets/img/Mujer-Escribiendo.png' %}" style="border-style: none;background: #ffffff;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="text-center" style="font-family: 'Red Hat Display', sans-serif;font-weight: bold;margin-top: 56px;">"Just need to manage your accommodations effortlessly?"</h1>
+    <div class="container text-center" style="margin-left: auto;margin-right: auto;background: #9eb8f7;"><img style="padding: 0px;margin-left: 0px;" src="{%static 'assets/img/Demostracion-landing.png' %}"></div>
+    <div></div>
+    <div class="container">
+        <div class="bg-dark border rounded border-0 border-dark overflow-hidden"></div>
+    </div>
+    <script src="{%static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

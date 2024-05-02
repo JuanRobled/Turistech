@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Turistech-Iniciar sesión</title>
+        <link href="{%static 'assets/signIn/css/styleSignIn.css' %}" rel='stylesheet'>
+    </head>
+    <footer>&#191Aun no tinenes una cuenta? <a href="{% url 'signUp' %}">Registrate aquí</a></footer>
+    <body>
+        <img src="{%static 'assets/signIn/img/logo.svg' %}">
+        <label class="Nombre">Turistech</label>
+        <main>
+            <rect></rect>
+            <h1>
+                Que bueno tenerte de vuelta
+            </h1>
+            <div class="formulario">
+                <h2>Iniciar Sesión:</h2>
+                <form>
+                    <div class="email">
+                        <label class="emailLabel">Correo:</label>
+                        <input type="text" placeholder="ejemplo@gmail.com" class="emailInput">
+                    </div>
+                    <div class="passwd">
+                        <label class="passwdLabel">Contraseña:</label>
+                        <input type="password" placeholder="Ingresa al menos 8 caractéres" class="passwdInput">
+                        <span class="passwdSvg"><img src= "{%static 'assets/signIn/img/material-visibility.svg' %}"></span>
+                    </div>
+                    <br>
+                    <div class="check">
+                        <input type="checkbox">
+                        <label>Recordarme</label>
+                    </div>
+                    <a href="ReestablecerContraseña">&#191Olvidaste tu contraseña?</a>
+                    <br>
+                    <a href="{% url 'homePage' %}" class="sendIniciarSesion">Iniciar Sesion</a>
+                </form>
+                <form>
+                    <h6>O inicia sesion con:</h6>
+                    <button type="submit" class="bG">Google</button>
+                    <button type="submit" class="bF">Facebook</button>
+                    <button type="submit" class="bA">Apple</button>
+                </form>
+            </div>
+            <img src="{% static 'assets/signIn/img/material-lightbulb.svg' %}">
+        </main>
+    </body>
+</html>

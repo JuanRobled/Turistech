@@ -1,0 +1,692 @@
+html{
+    background: #F8F9FAFF;
+}
+
+.rectangulo {
+    width: 20px; 
+    height: 10px; /* Altura del rectángulo */
+    color: #2D66F5FF; /* primary-500 */
+    background: #C0D1FCFF; /* Grosor y color del borde */
+    border-radius: 10px; /* Radio de borde para redondear las esquinas */
+    margin: 10px; /* Espacio exterior alrededor del rectángulo */
+    padding: 10px; /* Espacio interior entre el borde y el contenido */
+    display: inline-block; /* Para que los rectángulos estén uno al lado del otro */
+    align-items: center; 
+    justify-content: center; 
+}
+
+.rectTxt{
+    top: -15px;
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    opacity: 1; 
+    padding-left: 9px; 
+    padding-right: 9px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 18px;
+}
+
+.top{
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    width: 1440px; 
+    height: 108px; 
+    background: #FFFFFFFF;
+    border-radius: 0px; 
+    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+}
+
+.menuSvg{
+    position: absolute; 
+    top: 36px; 
+    left: 32px; 
+    width: 32px; 
+    height: 32px; 
+    fill: #323842FF;
+}
+
+.buscador{
+    position: absolute; 
+    top: 32px; 
+    left: 324px; 
+    opacity: 1; 
+}
+
+.lupaSvg{
+    position: absolute; 
+    top: 12px; 
+    left: 16px; 
+    width: 20px; 
+    height: 20px; 
+    fill: #171A1FFF;
+}
+
+.buscadorInput{
+    width: 640px; 
+    height: 44px; 
+    padding-left: 44px; 
+    padding-right: 44px; 
+    font-family: Manrope; 
+    font-size: 16px; 
+    line-height: 26px; 
+    font-weight: 400; 
+    background: #F3F4F6FF; /* neutral-200 */
+    border-radius: 22px; 
+    border-width: 0px; 
+    outline: none; 
+}
+
+.tuneSvg{
+    position: absolute; 
+    top: 12px; 
+    right: 16px; 
+    width: 20px; 
+    height: 20px; 
+    fill: #171A1FFF;
+}
+
+.notifBtn{
+    position: absolute; 
+    top: 32px; 
+    left: 1244px; 
+    width: 36px; 
+    height: 36px; 
+    padding: 0 0px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #565E6CFF; /* neutral-600 */
+    background: #F3F4F6FF; /* neutral-200 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 18px; 
+    gap: 0px;
+}
+
+img[src="home.svg"]{
+    width: 22px; 
+    height: 22px; 
+    fill: #565E6CFF;
+}
+
+.opcsBtn{
+    position: absolute; 
+    top: 32px; 
+    left: 1288px; 
+    width: 36px; 
+    height: 36px; 
+    padding: 0 0px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #FFFFFFFF; /* white */
+    background: rgb(122, 160, 255); /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 18px; 
+    gap: 0px; 
+}
+
+img[src="opcs.svg"]{
+    width: 22px; 
+    height: 22px; 
+    fill: #FFFFFFFF;
+}
+
+.userBtn{
+    position: absolute; 
+    top: 32px; 
+    left: 1348px; 
+    width: 36px; 
+    height: 36px; 
+    background: #FFEEABFF; /* secondary-200 */
+    opacity: 1; 
+    overflow: hidden; 
+    border-radius: 18px;
+}
+
+img[src="user.jpg"]{
+    width: 36px; 
+    height: 36px; 
+}
+
+.downArrowBtn{
+    position: absolute; 
+    top: 42px; 
+    left: 1392px; 
+    width: 16px; 
+    height: 16px; 
+    fill: #9095A0FF;
+}
+
+.side{
+    position: absolute; 
+    top: 120px; 
+    left: 0px; 
+    width: 308px; 
+    height: 1762px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 0px; 
+}
+
+.tab1{
+    position: absolute; 
+    top: 45px; 
+    left: 32px; 
+    width: 236px; 
+    height: 200px; 
+    display: flex; 
+    flex-direction: column; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    opacity: 1;
+}
+
+.tab2{
+    position: absolute; 
+    top: 316px; 
+    left: 32px; 
+    width: 236px; 
+    height: 116px; 
+    display: flex; 
+    flex-direction: column; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    opacity: 1;
+}
+
+.sideItem{
+    padding: 16px NaNpx; 
+    display: flex; 
+    align-items: center; 
+    justify-content: left; 
+    color: #565E6CFF; /* neutral-600 */
+    background: #FFFFFFFF; /* transparent */
+    border-radius: 0px; 
+    gap: 8px; 
+    cursor: pointer; 
+    white-space: nowrap;
+}
+.linea{
+    position: absolute; 
+    top: 292px; 
+    left: 0px; 
+    width: 308px; 
+    height: 0px; 
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid; 
+    transform: rotate(0deg);
+}
+
+.adminTxt{
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400;
+    color: #565E6CFF;
+}
+.logout{
+    position: absolute; 
+    top: 728px; 
+    left: 32px; 
+    width: 236px; 
+    height: 40px; 
+    display: flex; 
+    flex-direction: column; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    opacity: 1; 
+}
+
+.tituloStats{
+    position: absolute; 
+    top: 132px; 
+    left: 332px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 32px; 
+    line-height: 48px; 
+    font-weight: 700; 
+    color: #323842FF;
+}
+
+.ganacias{
+    position: absolute; 
+    top: 204px; 
+    left: 332px; 
+    width: 728px; 
+    height: 272px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 4px; /* border-m */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid;
+}
+
+.ganaciasTxt{
+    position: absolute; 
+    top: 24px; 
+    left: 24px; 
+    font-family: Manrope; /* Body */
+    font-size: 30px; 
+    line-height: 28px; 
+    font-weight: 600; 
+    color: #171A1FFF;
+}
+
+.numeroGanancias{
+    position: absolute; 
+    top: 99px; 
+    left: 24px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 40px; 
+    line-height: 56px; 
+    font-weight: 600; 
+    color: #171A1FFF; 
+}
+
+.anualTxtG{
+    position: absolute; 
+    top: 159px; 
+    left: 24px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    color: #323842CC;
+}
+
+.graficaGanacias{
+    position: absolute; 
+    top: -15px; 
+    left: 314px; 
+    width: 600px; 
+    height: 300px; 
+}
+
+.costos{
+    position: absolute; 
+    top: 500px; 
+    left: 332px;
+    width: 728px; 
+    height: 272px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 4px; /* border-m */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid;
+}
+
+.costosTxt{
+    position: absolute; 
+    top: 24px; 
+    left: 24px; 
+    font-family: Manrope; /* Body */
+    font-size: 30px; 
+    line-height: 28px; 
+    font-weight: 600; 
+    color: #171A1FFF;
+}
+
+.numeroCostos{
+    position: absolute; 
+    top: 99px; 
+    left: 24px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 40px; 
+    line-height: 56px; 
+    font-weight: 600; 
+    color: #171A1FFF; 
+}
+
+.anualTxtC{
+    position: absolute; 
+    top: 159px; 
+    left: 24px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    color: #323842CC;
+}
+
+.graficaCostos{
+    position: absolute; 
+    top: -15px; 
+    left: 314px; 
+    width: 600px; 
+    height: 300px; 
+}
+
+.ocupacion{
+    position: absolute; 
+    top: 796px; 
+    left: 332px; 
+    width: 728px; 
+    height: 470px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 4px; /* border-m */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid;
+}
+
+.ocupacion1Txt{
+    position: absolute; 
+    top: 24px; 
+    left: 24px; 
+    font-family: Manrope; /* Body */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 600; 
+    color: #171A1FFF;
+}
+
+.ocupacion2Txt{
+    position: absolute; 
+    top: 60px; 
+    left: 24px; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #9095A0FF;
+}
+
+select[id="hotelesSel"]{
+    position: absolute; 
+    top: 24px; 
+    left: 300px; 
+    opacity: 1;
+    width: 164px; 
+    height: 32px; 
+    padding-left: 8px; 
+    padding-right: 28px; 
+    font-family: Manrope; 
+    font-size: 12px; 
+    line-height: 20px; 
+    font-weight: 400; 
+    color: #171A1FFF; /* neutral-900 */
+    background: #FFFFFFFF; /* white */
+    border-radius: 8px; /* border-xl */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    outline: none; 
+}
+
+select[id="tiempoOcupacion"]{
+    position: absolute; 
+    top: 24px; 
+    left: 496px; 
+    opacity: 1;
+    width: 164px; 
+    height: 32px; 
+    padding-left: 8px; 
+    padding-right: 28px; 
+    font-family: Manrope; 
+    font-size: 12px; 
+    line-height: 20px; 
+    font-weight: 400; 
+    color: #171A1FFF; /* neutral-900 */
+    background: #FFFFFFFF; /* white */
+    border-radius: 8px; /* border-xl */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    outline: none; 
+}
+
+.graficaOcupacion{
+    position: absolute; 
+    top: 114px; 
+    left: 24px; 
+    width: 680px; 
+    height: 332px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 4px; /* border-m */
+    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+}
+
+.solicitudes{
+    position: absolute; 
+    top: 1292px; 
+    left: 332px;
+    width: 728px; 
+    height: 470px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 4px; /* border-m */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid;
+}
+
+.numeros{
+    position: absolute; 
+    top: 205px; 
+    left: 1084px; 
+    width: 332px; 
+    height: 335px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 6px; /* border-l */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid; 
+}
+
+.numerosTitulo{
+    position: absolute; 
+    top: 24px; 
+    left: 24px; 
+    font-family: Manrope; /* Body */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 600; 
+    color: #171A1FFF
+}
+
+.tab3{
+    position: absolute; 
+    top: 60px; 
+    left: 24px; 
+    width: 284px; 
+    height: 268px; 
+    opacity: 1; 
+    border-radius: 4px; /* border-m */
+}
+
+select[id="tiempoOcupacionN"]{
+    position: absolute; 
+    top: 22px; 
+    left: 180px; 
+    opacity: 1;
+    width: 128px; 
+    height: 32px; 
+    padding-left: 8px; 
+    padding-right: 28px; 
+    font-family: Manrope; 
+    font-size: 12px; 
+    line-height: 20px; 
+    font-weight: 400; 
+    color: #171A1FFF; /* neutral-900 */
+    background: #FFFFFFFF; /* white */
+    border-radius: 8px; /* border-xl */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    outline: none; 
+}
+
+.datoTxt{
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #323842FF;
+}
+
+.personal{
+    position: absolute;
+    top: 570px;
+    left: 1084px; 
+    width: 332px; 
+    height: 500px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 6px; /* border-l */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid;
+}
+
+.tituloPersonal{
+    position: absolute; 
+    top: 24px; 
+    left: 24px; 
+    font-family: Manrope; /* Body */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 600; 
+    color: #171A1FFF;
+}
+
+.tab4{
+    position: absolute; 
+    top: 84px; 
+    left: 24px; 
+    width: 284px; 
+    height: 354px; 
+    opacity: 1; 
+    border-radius: 4px; /* border-m */
+    border-collapse: collapse;
+}
+
+.empFoto{
+    width: 36px; 
+    height: 36px; 
+    background: #D7D0FFFF; /* tertiary1-200 */
+    opacity: 1; 
+    overflow: hidden; 
+    border-radius: 18px;
+    width: 36px; 
+    height: 36px; 
+}
+
+.nombreEmp{
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #323842FF;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.estadoEmp{
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: rgb(1, 253, 1);
+    position: relative;
+    top: 0;
+    margin-top: 0;
+}
+
+.masEmp{
+    position: absolute; 
+    top: 440px; 
+    left: 33px; 
+    width: 266px; 
+    height: 36px; 
+    padding: 0 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #FFFFFFFF; /* white */
+    background: #2D66F5FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 4px;
+}
+
+.compartir{
+    position: absolute; 
+    top: 1100px; 
+    left: 1084px; 
+    width: 332px; 
+    height: 250px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 6px; /* border-l */
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid;
+}
+
+.compartirTitulo{
+    position: absolute; 
+    top: 24px; 
+    left: 24px; 
+    font-family: Manrope; /* Body */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 600; 
+    color: #171A1FFF;
+}
+
+.compartirInfo{
+    position: absolute; 
+    top: 64px; 
+    left: 24px; 
+    width: 284px; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #9095A0FF;
+}
+
+.xlsxSvg{
+    position: absolute; 
+    top: 132px; 
+    left: 24px; 
+    width: 48px; 
+    height: 48px; 
+    display: flex;
+    width: 24px; 
+    height: 24px; 
+}
+
+.pdfSvg{
+    position: absolute; 
+    top: 132px; 
+    left: 66px; 
+    width: 48px; 
+    height: 48px; 
+    display: flex;
+    width: 24px; 
+    height: 24px;
+}
+
+.docxSvg{
+    position: absolute; 
+    top: 132px; 
+    left: 108px; 
+    width: 48px; 
+    height: 48px; 
+    display: flex; 
+    width: 24px; 
+    height: 24px; 
+}

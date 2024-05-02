@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="{%static 'assets/Api_Connection/css/common.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'assets/Api_Connection/css/fonts.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'assets/Api_Connection/css/UntitledPage.css' %}" />
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sticky-js@1.3.0/dist/sticky.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+
+
+
+</head>
+
+<body class="flex-column">
+    <main class="untitled-page main">
+        <section class="section1">
+            <div class="flex_col">
+                <div class="flex_col1">
+                    <div class="flex_row">
+                        <img class="image" src="{%static 'assets/Api_Connection/assets/dbd5408fa12fdbb84442e23b3ac31f8b.png' %}" alt="alt text" />
+                        <div class="info">Back</div>
+                    </div>
+                    <h1 class="title">Account Settings</h1>
+                </div>
+                <div class="content_box2">
+                    <div class="flex_col2">
+                        <div class="flex_row1">
+                            <a href="{% url 'Settings' %}" class="circle-button">
+
+                                <div class="content_box">
+                                    <img class="image1" src="{%static 'assets/Api_Connection/assets/b4a64e59fc75da86852e60c8e592798d.png' %}" alt="alt text" />
+                                </div>
+                            </a>
+                            <div class="text">Personal info</div>
+                        </div>
+                        <div class="flex_row1">
+                            <div class="content_box1">
+                                <img class="image1" src="{%static 'assets/Api_Connection/assets/fbc83dc277e0893cdab48f08c29ac6d1.png' %}" alt="alt text" />
+                            </div>
+                            <div class="text1">Your API connection</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_row2">
+                <div class="content_box11">
+                    <div class="flex_col3">
+                        <div class="flex_col4">
+                            <div class="flex_col5">
+                                <div class="flex_row3">
+                                    <img class="image2" src="{%static 'assets/Api_Connection/assets/a93e75676c3f9823c8ee71c2cf503a21.png' %}" alt="alt text" />
+                                    <h1 class="title1">airbnb</h1>
+                                </div>
+                                <div class="rect4"></div>
+                            </div>
+                            <h3 class="subtitle">Connect your Airbnb profile and have your reservations at your fingertips!</h3>
+                        </div>
+                        <div class="content_box3">
+                            <div class="text2">Connect</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_box31">
+                    <div class="flex_col6">
+                        <div class="flex_col4">
+                            <div class="flex_col7">
+                                <div class="flex_row4">
+                                    <img class="image3" src="{%static 'assets/Api_Connection/assets/2ce46dd6b5b1fda7a45d94d031c3573c.png' %}" alt="alt text" />
+                                    <h1 class="title1">Booking</h1>
+                                </div>
+                                <div class="rect4"></div>
+                            </div>
+                            <h3 class="subtitle">Link your Booking.com profile and manage your reservations seamlessly!</h3>
+                        </div>
+                        <div class="content_box4">
+                            <div class="text2">Connect</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_col8">
+                <h1 class="hero_title">Your API Connections</h1>
+                <h4 class="highlight">Use this for connecting your program with reservation platforms</h4>
+            </div>
+        </section>
+
+    </main>
+    <script type="text/javascript">
+        AOS.init();
+        new Sticky('.sticky-effect');
+    </script>
+</body>
+
+</html>

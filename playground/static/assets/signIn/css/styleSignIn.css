@@ -1,0 +1,260 @@
+footer{
+    position: absolute; 
+    top: 31px; 
+    left: 1045px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #323842FF; /* neutral-700 */
+}
+
+h1 {
+    position: absolute; 
+    top: 334px; 
+    left: 234px; 
+    width: 328px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 48px; 
+    line-height: 68px; 
+    font-weight: 400; 
+    color: #9095A0FF; /* neutral-500 */
+}
+
+h2 {
+    position: absolute; 
+    top: 50px; 
+    left: 150px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 32px; 
+    line-height: 48px; 
+    font-weight: 700; 
+    color: #171A1FFF;
+}
+
+h3{
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 700; 
+}
+
+.formulario {
+    position: absolute; 
+    top: 190px; 
+    left: 650px; 
+    width: 471px; 
+    height: 520px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 4px; /* border-m */
+    border-width: 2px; 
+    border-color: #2D66F5FF; /* primary-500 */
+    border-style: solid;
+}
+
+/* Textbox 1 */
+.email {
+    position: absolute; 
+    top: 136px; 
+    left: 56px; 
+    opacity: 1; 
+}
+.emailInput {
+    width: 359px; 
+    height: 29px; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    background: #F3F4F6FF; /* neutral-200 */
+    border-radius: 4px; /* border-m */
+    border-width: 0px; 
+    outline: none; 
+}
+.emailLabel {
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 700; 
+}
+
+.passwd {
+    position: absolute; 
+    top: 212px; 
+    left: 56px; 
+    opacity: 1; 
+}
+.passwdInput {
+    width: 359px; 
+    height: 29px; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    background: #F3F4F6FF; /* neutral-200 */
+    border-radius: 4px; /* border-m */
+    border-width: 0px; 
+    outline: none; 
+}
+.passwdSvg {
+    position: absolute; 
+    top: 25px; 
+    right: 48px; 
+    width: 16px; 
+    height: 16px; 
+    fill: #171A1FFF; /* neutral-900 */
+}
+.passwdLabel {
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 700; 
+}
+
+.check {
+    position: absolute; 
+    top: 288px; 
+    left: 56px; 
+    opacity: 1;
+}
+
+a[href="ReestablecerContraseña"] {
+    position: absolute; 
+    top: 288px; 
+    left: 296px; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+}
+
+.sendIniciarSesion {
+    position: absolute; 
+    top: 322px; 
+    left: 65px; 
+    width: 359px; 
+    height: 44px; 
+    padding: 0 16px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Manrope; 
+    font-size: 16px; 
+    line-height: 26px; 
+    font-weight: 400; 
+    color: #FFFFFFFF; /* white */
+    background: #2D66F5FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 4px; /* border-m */
+    box-shadow: 0px 8px 17px #2d66f5, 0px 0px 2px #2d66f5; /* shadow-l */
+}
+
+h6 {
+    position: absolute; 
+    top: 370px; 
+    left: 188px; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #323842FF; /* neutral-700 */
+}
+
+.bG {
+    position: absolute; 
+    top: 437px; 
+    left: 108px; 
+    width: 81px; 
+    height: 36px; 
+    padding: 0 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #C71610FF; 
+    background: #FEF1F1FF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 18px; 
+    gap: 0px; 
+}
+
+.bF{
+    position: absolute; 
+    top: 437px; 
+    left: 197px; 
+    width: 81px; 
+    height: 36px; 
+    padding: 0 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #335CA6FF; 
+    background: #F3F6FBFF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 18px; 
+    gap: 0px; 
+}
+
+.bA {
+    position: absolute; 
+    top: 437px; 
+    left: 286px; 
+    width: 78px; 
+    height: 36px; 
+    padding: 0 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #565E6CFF; /* neutral-600 */
+    background: #F3F4F6FF; /* neutral-200 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 18px; 
+    gap: 0px; 
+}
+
+/* Lightbulb 1 */
+img[src="material-lightbulb.svg"] {
+position: absolute; 
+top: 386px; 
+left: 1240px; 
+width: 64px; 
+height: 64px; 
+fill: #171A1FFF; /* neutral-900 */
+}
+
+img[src="logo.svg"]{
+position: absolute; 
+top: 31px; 
+left: 36px; 
+width: 175px; 
+height: 183px; 
+border-radius: 0px;
+}
+
+.Nombre{
+position: absolute; 
+top: 99px; 
+left: 211px; 
+font-family: Red Hat Display; /* Heading */
+font-size: 32px; 
+line-height: 48px; 
+font-weight: 600; 
+color: #2D66F5FF;
+}
+
+rect{
+    position: absolute; 
+    top: 310px; 
+    left: 210px; 
+    width: 4px; 
+    height: 214px; 
+    background: #285EE8FF; 
+    border-radius: 2px;
+}

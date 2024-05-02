@@ -1,0 +1,363 @@
+h2 {
+    position: absolute; 
+    top: 20px; 
+    left: 70px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 24px; 
+    line-height: 36px; 
+    font-weight: 600; 
+    color: #171A1FFF;
+}
+
+
+.formulario {
+    position: absolute; 
+    top: 200px; 
+    left: 118px; 
+    width: 622px; 
+    height: 657px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 24px;
+    border-radius: 4px; /* border-m */
+    border-width: 2px; 
+    border-color: #2D66F5FF; /* primary-500 */
+    border-style: solid;
+    box-shadow: 0px 4px 9px #171a1f, 0px 0px 2px #171a1f;
+}
+
+.name {
+    position: absolute; 
+    top: 102px; 
+    left: 70px; 
+    opacity: 1; 
+}
+.nameInput {
+    width: 200px; 
+    height: 52px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    background: #F3F4F6FF; /* neutral-200 */
+    border-radius: 4px; /* border-m */
+    border-width: 0px; 
+    outline: none; 
+}
+.nameLabel {
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 700; 
+}
+
+.lastName {
+    position: absolute; 
+    top: 102px; 
+    left: 321px; 
+    opacity: 1; 
+}
+.lastNameInput {
+    width: 231px; 
+    height: 52px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    background: #F3F4F6FF; /* neutral-200 */
+    border-radius: 4px; /* border-m */
+    border-width: 0px; 
+    outline: none; 
+}
+.lastNameLabel {
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 700; 
+}
+
+/* Textbox 1 */
+.email {
+    position: absolute; 
+    top: 199px; 
+    left: 70px; 
+    opacity: 1; 
+}
+.emailInput {
+    width: 482px; 
+    height: 52px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    background: #F3F4F6FF; /* neutral-200 */
+    border-radius: 4px; /* border-m */
+    border-width: 0px; 
+    outline: none;
+}
+.emailLabel {
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 700;
+}
+
+.passwd {
+    position: absolute; 
+    top: 296px; 
+    left: 70px; 
+    opacity: 1; 
+}
+.passwdInput {
+    width: 450px; 
+    height: 52px; 
+    padding-left: 20px; 
+    padding-right: 52px; 
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    background: #F3F4F6FF; /* neutral-200 */
+    border-radius: 4px; /* border-m */
+    border-width: 0px; 
+    outline: none; 
+}
+.passwdSvg {
+    position: absolute; 
+    top: 45px; 
+    right: 40px; 
+    width: 24px; 
+    height: 24px; 
+    fill: #171A1FFF;
+}
+.passwdLabel {
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 700; 
+}
+
+.check {
+    position: absolute; 
+    top: 394px; 
+    left: 110px; 
+    opacity: 1; 
+}
+
+.checkLabel {
+    position: absolute; 
+    top: 393px; 
+    left: 128px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #171A1FFF;
+}
+
+.sendRegistro {
+    position: absolute; 
+    top: 431px; 
+    left: 90px; 
+    width: 482px; 
+    height: 52px; 
+    padding: 0 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    color: #FFFFFFFF; /* white */
+    background: #2D66F5FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 4px; /* shadow-l */
+}
+
+img[src="logo.svg"] {
+    position: absolute; 
+    top: 31px; 
+    left: 36px; 
+    width: 175px; 
+    height: 183px; 
+    border-radius: 0px;
+}
+
+.Nombre {
+    position: absolute; 
+    top: 99px; 
+    left: 211px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 32px; 
+    line-height: 48px; 
+    font-weight: 600; 
+    color: #2D66F5FF;
+}
+
+h6 {
+    position: absolute; 
+    top: 470px; 
+    left: 285px; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #565E6CFF;
+}
+
+.bG {
+    position: absolute; 
+    top: 537px; 
+    left: 243px; 
+    width: 48px; 
+    height: 48px; 
+    padding: 0 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #C71610FF; 
+    background: #FEF1F1FF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 24px; 
+    gap: 0px; 
+}
+
+.bF {
+    position: absolute; 
+    top: 537px; 
+    left: 307px; 
+    width: 48px; 
+    height: 48px; 
+    padding: 0 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #335CA6FF; 
+    background: #F3F6FBFF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 24px; 
+    gap: 0px; 
+}
+
+.bA {
+    position: absolute; 
+    top: 537px; 
+    left: 371px; 
+    width: 48px; 
+    height: 48px; 
+    padding: 0 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #565E6CFF; /* neutral-600 */
+    background: #F3F4F6FF; /* neutral-200 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 24px; 
+    gap: 0px; 
+}
+
+.iniciarSesion {
+    position: absolute; 
+    top: 601px; 
+    left: 241px; 
+    font-family: Manrope; /* Body */
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #323842FF;
+}
+
+.titulo{
+    position: absolute; 
+    top: 285px; 
+    left: 844px; 
+    font-family: Red Hat Display; /* Heading */
+    font-size: 40px; 
+    line-height: 56px; 
+    font-weight: 600; 
+    color: #171A1FFF;
+}
+
+img[src="svgTitulo.svg"] {
+    position: absolute; 
+    top: 339px; 
+    left: 981px; 
+    width: 110px; 
+    height: 25px; 
+    border-radius: 0px; 
+    transform: rotate(354deg); 
+}
+
+.ven1 {
+    position: absolute; 
+    top: 387px; 
+    left: 923px; 
+    width: 420px; 
+    height: 56px; 
+    font-family: Manrope; /* Body */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    color: #171A1FFF;
+}
+
+img[src="svg1.svg"] {
+    position: absolute; 
+    top: 380px; 
+    left: 843px; 
+    width: 44px; 
+    height: 56px; 
+    border-radius: 0px; 
+}
+
+.ven2 {
+    position: absolute; 
+    top: 454px; 
+    left: 923px; 
+    width: 420px; 
+    font-family: Manrope; /* Body */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    color: #171A1FFF;
+}
+
+img[src="svg2.svg"] {
+    position: absolute; 
+    top: 469px; 
+    left: 843px; 
+    width: 44px; 
+    height: 48px; 
+    border-radius: 0px; 
+}
+
+.ven3 {
+    position: absolute; 
+    top: 552px; 
+    left: 923px; 
+    width: 420px; 
+    font-family: Manrope; /* Body */
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 400; 
+    color: #171A1FFF;
+}
+
+img[src="svg3.svg"] {
+    position: absolute; 
+    top: 566px; 
+    left: 844px; 
+    width: 41px; 
+    height: 42px; 
+    border-radius: 0px;
+}

@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripciones | TurisTech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/custom-styles.css' %}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Suscripciones para Proveedores de Alojamiento</h2>
+        <p>Complete el siguiente formulario para calcular el costo de la suscripción basado en el número de habitaciones disponibles en su establecimiento.</p>
+        <div class="card p-4">
+            <form id="subscription-form">
+                <div class="mb-3">
+                    <label for="roomCount" class="form-label">Número de Habitaciones:</label>
+                    <input type="number" class="form-control" id="roomCount" name="roomCount" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Calcular Precio</button>
+                </div>
+            </form>
+            <div id="priceDisplay" class="alert alert-success mt-3" style="display: none;">
+                <p id="priceText"></p>
+                <button id="continueButton" type="button" class="btn btn-success" style="display: none;">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var homePageUrl = "{% url 'homePage' %}"; // Generar la URL de Django y almacenarla en una variable JavaScript
+
+        document.getElementById('subscription-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var roomCount = parseInt(document.getElementById('roomCount').value);
+            if(roomCount < 1) {
+                alert('Por favor, ingrese un número válido de habitaciones.');
+                return;
+            }
+            var pricePerRoom = 200000; // Precio inicial
+            var additionalPrice = 0;
+
+            if (roomCount > 10) {
+                var tenBlockCount = Math.min(Math.floor((roomCount - 1) / 10), 10); // Calcula cuántos bloques de 10 caben en las primeras 100 habitaciones
+                additionalPrice += tenBlockCount * 50000;
+                if (roomCount > 100) {
+                    tenBlockCount = Math.floor((roomCount - 1) / 10) - 10; // Cuántos bloques de 10 después de las primeras 100
+                    additionalPrice += tenBlockCount * 20000;
+                }
+            }
+
+            var totalPrice = pricePerRoom + additionalPrice;
+            document.getElementById('priceDisplay').style.display = 'block';
+            document.getElementById('priceText').textContent = 'El precio total es: $' + totalPrice.toLocaleString();
+            document.getElementById('continueButton').style.display = 'inline'; // Muestra el botón Continuar
+        });
+
+        document.getElementById('continueButton').addEventListener('click', function() {
+            window.location.href = homePageUrl; // Utilizar la URL almacenada para redirigir
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
